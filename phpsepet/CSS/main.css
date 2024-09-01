@@ -1,0 +1,130 @@
+:root{
+    --bodyRenk: #ededed;
+    --headerFooter: #6b6b6b;
+    --container: #fefefe;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    text-decoration: none;
+  }
+  
+  body {
+    background-image: url("background-img.jpg");
+  } /**/
+
+   /* HEADER BAŞLANGIÇ*/
+   header {
+    background-color:transparent;
+    height: 50px;
+    
+}
+
+header a {
+    display: inline-block;
+    
+    padding: 15px 20px;
+    line-height: 20px;
+    text-decoration: none;
+    color: var(--container);
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Yatayda uzun metinlerin kırılmasını engelle */
+    background-color: var(--headerFooter);
+}
+header a:hover{
+    background-color:var(--container);
+    color: var(--headerFooter);
+}
+/* İçeriği ortala */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-bg{
+    width: 100%;
+    height: 200px;
+    background-color: orange;
+}
+.header-bg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+  /* HEADER BİTİŞ*/
+
+  /* FOOTER BAŞLANGIÇ*/
+
+  .footer {
+    background: var(--headerFooter);
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: #ccc;
+    font-size: 0.95em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
+
+  
+   /* FOOTER BİTİŞ*/
+a:hover{
+    color: #ffd700;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height:5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--headerFooter);
+    border-radius: 50px;
+  }
+  

@@ -1,0 +1,5 @@
+uyeler ve oyunlar veritabanı oluşturuldu
+kayıt olma ve giriş sistemi yapıldı.
+yetki sistemi yapıldı.
+yetkili hesap ile girişlerde oyun ekleme ve silme fonksiyonları yazıldı.
+yetkili ise oyun id gözükmesi sağlandı.

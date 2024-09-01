@@ -1,0 +1,160 @@
+:root {
+    --bodyRenk: #ededed;
+    --headerFooter: #253342;
+    --container: #fefefe;
+}
+
+body {
+    margin: auto; /* Sayfayı merkezler */
+    background-color: var(--bodyRenk);
+}
+
+.yeni-kategoriler ul {
+    list-style: none;
+    padding: 0;
+}
+
+.yeni-kategoriler ul li {
+    margin-bottom: 20px;
+    font-size: 18px;
+    position: relative; /* İç boşluklar için göreli pozisyon */
+    color: var(--headerFooter);
+    padding-bottom: 30px; /* Çizginin altındaki boşluk */
+}
+
+.yeni-kategoriler ul li:last-child::before {
+    display: none; /* Son öğeden sonra çizgiyi gizle */
+}
+
+.kategoriler {
+    display: block;
+    width: 80%; /* Sayfanın genişliğini yüzde 80 olarak ayarlar */
+    background-color: var(--headerFooter); /* Farklı bir arka plan rengi */
+    padding: 15px 2em; /* İç boşlukları artırır. 2em = 2 x font size */
+    border-top-right-radius: 100px; /* Sağ üst köşeyi yuvarlar */
+    font-size: 22px; /* Başlıkları büyük yapar */
+    margin-bottom: 20px; /* Başlıkların altında boşluk bırakır */
+    color: white;
+    min-width: 20%; /* Uzunluğu minimum olarak ayarlar */
+    width: fit-content; /* Genişliği içeriklere göre ayarlar */
+    box-sizing: border-box; /* Padding değerlerini genişlikten dahil et */
+}
+
+.yeni-kategoriler ul li:last-child {
+    padding-bottom: 0px; /* Son öğenin alt boşluğunu -20px yap */
+}
+
+/* Butonlar */
+.button {
+    padding: 8px 16px;
+    background-color: #4CAF50; /* Yeşil renk */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Arka plan rengi için geçiş efekti */
+}
+
+/* Buton hover efekti */
+.button:hover {
+    background-color: #45a049; /* Koyu yeşil hover rengi */
+}
+
+/* Oyunlar Kategorisi Stilleri */
+.oyunlar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.oyun {
+    width: 30%; /* Sıraları yan yana yerleştirmek için genişlik ayarlayın */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--container);
+    border-radius: 10px;
+    color: var(--headerFooter);
+    position: relative;
+}
+
+.oyun img {
+    width: 100%; /* Resimlerin genişliği yüzde 100 olacak */
+    height: 200px; /* Resimlerin yüksekliği 200px olacak */
+    border-radius: 10px;
+}
+
+.oyun h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.oyun p {
+    margin-bottom: 10px;
+}
+
+.oyun .sepete-ekle {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Yeşil renk */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Arka plan rengi için geçiş efekti */
+}
+
+/* Sepete ekle buton hover efekti */
+.oyun .sepete-ekle:hover {
+    background-color: #45a049; /* Koyu yeşil hover rengi */
+}
+
+.fiyat {
+    color: #45a049;
+    font-size: 20px;
+}
+
+/* Sepet Kısmı Stilleri */
+.sepet-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    background-color: var(--container);
+    border: 1px solid var(--headerFooter);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* Yukarıda diğer öğelerin üzerinde olması için yüksek bir değer */
+}
+
+
+.sepet-container h2 {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--headerFooter);
+    color: var(--headerFooter);
+}
+
+#sepet p {
+    margin: 10px 0;
+    color: var(--headerFooter);
+}
+
+.satin-al-button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.satin-al-button:hover {
+    background-color: #45a049;
+}

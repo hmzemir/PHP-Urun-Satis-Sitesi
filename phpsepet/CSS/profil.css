@@ -1,0 +1,89 @@
+:root{
+    --bodyRenk: #ededed;
+    --headerFooter: #253342;
+    --container: #fefefe;
+}
+body{font-family: "Kanit", sans-serif;}
+
+.container {
+    width: 65%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: 
+    var(--container);
+    padding: 20px;
+    color: var(--headerFooter);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+/* profil container */
+
+
+
+.container-profil{
+    width: 100%;
+    padding-right: 10px;
+}
+
+.container-profil ol{
+    list-style: none;
+    padding: 0;
+}
+
+.container-profil ol li{
+    margin-bottom: 20px;
+    font-size: 15px;
+    position: relative; /* İç boşluklar için göreli pozisyon */
+    color: var(--headerFooter);
+}
+
+.container-profil ol li:last-child::after{
+    display: none; /* Son öğeden sonra çizgiyi gizle */
+}
+
+
+
+
+/* profil container */
+
+.yeni-konular{
+    width: 100%;
+    padding-right: 10px;
+}
+
+.yeni-konular ol{
+    list-style: none;
+    padding: 0;
+}
+
+.yeni-konular ol li{
+    margin-bottom: 20px;
+    font-size: 12px;
+    position: relative; /* İç boşluklar için göreli pozisyon */
+    color: var(--headerFooter);
+}
+
+.yeni-konular ol li::after{
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Çizginin altındaki boşluk */
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--headerFooter); /* Çizgi rengi */
+}
+
+.yeni-konular ol li:last-child::after{
+    display: none; /* Son öğeden sonra çizgiyi gizle */
+}
+strong{
+    display: block;
+    background-color: var(--headerFooter); /* Farklı bir arka plan rengi */
+    padding: 15px 20px; /* İç boşlukları artırır */
+    border-top-right-radius: 100px; /* Sağ üst köşeyi yuvarlar */
+    font-size: 20px; /* Başlıkları büyük yapar */
+    margin-bottom: 20px; /* Başlıkların altında boşluk bırakır */
+    color: white;
+}
